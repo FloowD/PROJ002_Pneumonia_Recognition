@@ -1,7 +1,7 @@
 import argparse
-import torch
-from PIL import Image
-from torchvision import transforms
+# import torch
+# from PIL import Image
+# from torchvision import transforms
 
 
 parser = argparse.ArgumentParser(description='Pneumonia X-Ray Recognition')

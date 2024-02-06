@@ -25,14 +25,20 @@ mlxtend==0.22.0
 ```
 
 ## Pre-trained models
-
-
+Les modèles pré-entrainées sont dans le dossier models
 
 ## Usage
-
+Choissez un modèls dans le dossier `model` et une image dans le dossier `images`
+```sh
+python main.py --input_image INPUT_IMAGE --model MODEL
+```
 
 ## Datasets
 
 On a utilisé le dataset  [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) pour l'entrainement et le test
 
 ## Training
+
+L'entrainement se fait dans le fichier main.ipynb
+
+Vous pouvez également y avoir accès depuis le [google colab](https://colab.research.google.com/drive/1UgSolgs2_rvoCECqeDeSnp3VTQ728kpm?usp=sharing).
