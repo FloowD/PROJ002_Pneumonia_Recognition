@@ -3,7 +3,6 @@
 Une implémentation Pytorch d'une détection de pneumonie en se basant sur des radios.
 
 
-
 Création d'un modèle de détection de pneumonie en utilisant **Pytorch**.
 
 En se basant principalement sur le document suivant : [Pneumonia Recognition](https://www.kaggle.com/code/madz2000/pneumonia-detection-using-cnn-92-6-accuracy/notebook)
@@ -28,6 +27,7 @@ mlxtend==0.22.0
 Les modèles pré-entrainées sont dans le dossier models
 
 ## Usage
+
 Choissez un modèls dans le dossier `model` et une image dans le dossier `images`
 ```sh
 python main.py --input_image INPUT_IMAGE --model MODEL

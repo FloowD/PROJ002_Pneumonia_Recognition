@@ -1,7 +1,8 @@
 import argparse
-# import torch
-# from PIL import Image
-# from torchvision import transforms
+import torch
+from PIL import Image
+from torchvision import transforms
+from models import *
 
 
 parser = argparse.ArgumentParser(description='Pneumonia X-Ray Recognition')
@@ -33,6 +34,10 @@ test_transform = transforms.Compose([
 ])
 image = test_transform(image)
 image = image.unsqueeze(0)
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model = model.to(device)
+image = image.to(device)
 
 # Make a prediction
 prediction = model(image)
